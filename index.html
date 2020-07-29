@@ -1,0 +1,231 @@
+
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="assets/resum.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link src="bootstrap.min.css">
+               <link rel="stylesheet" type="text/css" href="style.css">
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script> 
+        <title>RESUME</title>
+        <script> 
+        // -----------------changephoto-----------
+        const elephantimages={
+          1:'assets/elephant/-1.jpg',
+          2:'assets/elephant/-1.jpg',
+          3:'assets/elephant/1.jpg',
+          4:'assets/elephant/1.jpg',
+          5:'assets/elephant/2.jpg',
+          6:'assets/elephant/2.jpg',
+          7:'assets/elephant/3.jpg',
+          8:'assets/elephant/4.jpg',
+          9:'assets/elephant/5.jpg',
+          10:'assets/elephant/6.jpg',          
+                       } 
+
+        function trackScrollPosition() {
+  const y = window.scrollY;
+  
+  const label = Math.min(Math.floor(y/90) + 1, 20);
+  const imageToUse = elephantimages[label];
+  // Change the background image
+  $('.image-container').css('background-image', `url('${imageToUse}')`);
+}
+        
+$(document).ready(()=>{
+  $(window).scroll(()=>{
+    trackScrollPosition();
+  })
+})
+// ---------------------
+         function scrolltoeducation()
+          {         
+             window.scrollTo(0,805);
+                 }
+
+                 function scrolltoprojects()
+          {         
+             window.scrollTo(0,2205);
+                 }
+
+                 function scrolltoskills()
+          {         
+             window.scrollTo(0,2900);
+                 }
+
+                 function scrolltoabout()
+          {         
+             window.scrollTo(0,3405);
+                 }
+                 
+                 function scrtolltotop()
+{ 
+  window.scrollTo(0,0)
+  }
+                 </script>
+    </head>
+    <body>
+      <!-- <img class="cropped2" src="assets/flower.jpg" style="width: 50%;" > -->
+      <div class="row">
+        <div class="column">
+          <h1 style="text-align:center">SAI CHARAN REDDY.S</h1>
+        <br>
+        <p style="float:left;margin-left: 50px;"><strong>saic304@gmail.com;+917032988815;<a href="https://www.linkedin.com/in/sai-charan-seri-635a61196" target="_blank">Linkedin</a></strong></p>
+         </div>
+        <div class="column" style="margin-top: -17vh;float: right;overflow: hidden;">
+          <img src="assets/flower.jpg" class="cropped2">
+        </div>
+      </div>
+        
+        <div class="container" style="margin-top: -30px;">
+            <div class="row" style="height: 0vh;width: 100vw;">
+              <div class="column">
+                <div class="fade-inimg">
+                  <img src="assets/faceblack.png" style="margin-top: 15vh;margin-left: 25vw;"  width="300vw" height="400vh">
+                  <img src="assets/Angels.gif" style="margin-top: -50vh;margin-left: 25vw;opacity:2;border-radius: 50%;height: 400px;width: 350px;">
+                </div>       
+              </div>
+            <div class="column container" style="margin-top: -50vh;margin-left: -10vw;" >   
+              <div>
+               <button class="button slideinrighteducation"  onclick="scrolltoeducation()" title="Goto ... Section">
+                <span>Education</span>
+              </button><br><br><br><br><br>
+                  <div>
+                <button class="button slideinrightproject" onclick="scrolltoprojects()" title="Goto ... Section">
+                  <span>Projects</span>
+                </button><br><br><br><br><br>
+              </div>
+              <div > 
+                <button class="button slideinrightskills"  onclick="scrolltoskills()" title="Goto ... Section">
+                 <span>Skills</span>
+               </button><br><br><br><br><br>
+             </div>
+             <div >
+              <button class="button slideinrightabout"  onclick="scrolltoabout()" title="Goto ... Section">
+                <span>About</span>
+              </button><br>
+            </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <br>
+          <br>
+
+          <div class="image-container" style="width: 30%;height: 80%;margin-top: 11vh;overflow: hidden;float:right;"></div>
+
+         <div class="container" style="margin-top: 100vh;text-align: center;width: 68vw;">
+            <h1 style="text-decoration: underline;">-Education History-</h1>
+            <sub> <strong  style="font-size: large;">
+              <strong style="text-decoration: underline;">Bachelor's in Technology :</strong><br><br>
+              Computer Science;<br><br>
+              GITAM, HYDERABAD;<br><br>
+              2019-60%.
+              </strong></sub>
+          <br>
+          <br>
+          <hr width="300px">
+
+          <sub><strong style="font-size: large;">
+                        <strong style="text-decoration: underline;">PG-DIPLOMA :</strong><br><br>
+                        JAVA FULL STACK;<br><br>
+            NIIT,Kukatpally;<br><br>
+            2019.
+            </strong>
+          </sub>
+
+          <br>
+          <br>
+          <hr width="300px">
+
+          <sub><strong style="font-size: large;">
+            <strong style="text-decoration: underline;">University Entrance Qualification[12<sup>th</sup>] :   </strong><br><br>
+            MPC;<br><br>
+            VIGNAN,Kondapur;<br><br>
+            2015-75%.
+            </strong>
+          </sub>
+         </div>
+         <br>
+         <br>
+         <div class="container" style="width: 100vw;margin-top: 10vh;">
+          <img src="assets/London.gif" class="imageset" style="width: 33vw;height: 100vh;margin-left: 0px;">
+          <img src="assets/newyork.gif" class="imageset" style="width: 33.3vw;height: 100vh;margin-left: 0px;">
+          <img src="assets/paris.gif" class="imageset" style="width: 33vw;height: 100vh;margin-left: 0px;">        
+          <p style="margin-top:-90vh;opacity: 0.55;text-align: center;color: #616C6F;font-size: 60px;text-decoration: underline;"><strong >BEAUTIFULL WORLD!</strong></p>
+
+        </div>
+        <br>
+
+        <div class="container" style="margin-top: 90vh;text-align: center;">
+          <h1 style="text-decoration: underline;">-Project Details-</h1>
+          <sub> <strong  style="font-size: large;">
+            <strong style="text-decoration: underline;">E-Commerce Website Description:</strong><br><br>
+            Useing MVC architure a Dynamic webproject on Eclipse[Maven] Based on real time where products can be posted and bought.
+            Establised connection to Database[oracle] using JDBC[Bean,Servlet] in XML and using Frame works Spring & Hibernate performed CURD operations,spring for security[url blocking,login check,Mail,web flow,form] And JSP's as webpages.
+            </strong></sub>
+        <br>
+        <br>
+        <hr width="300px">
+
+        <sub><strong style="font-size: large;">
+                      <strong style="text-decoration: underline;">  Ticket Booking website Description:</strong><br><br>
+                      Useing MVC architure a Dynamic webproject on Eclipse[Maven] Based on real time where travel services can be posted and bought.As being a fast phased Enviornment Angular frame work was used in Visual studio Editor.
+                      Establised connection to Database[Oracle converting to MongoDB for better optimization and Learning] using Java classes. And  Frame works Spring , Hibernate to performe CURD[RestAPI] operations,spring for security[url blocking,login check,Mail,web flow,form],Angular components[html,js,css] as webpages.
+                      </strong>
+        </sub>
+
+       </div>
+
+       <br>
+       <br>
+
+
+      <div class="container" style="margin-top: 20vh;text-align: center;">
+          <h1 style="text-decoration: underline;">-SKILLS-</h1>
+          <sub> <strong  style="font-size: large;">
+            <strong style="text-decoration: underline;">TECHNICAL:</strong><br><br>
+            - JAVA[CORE,ADVANCE];<br>
+        - SQL;<br>
+        - HTML;CSS;Bootstrap;<br>
+        - NODE.JS;<br><br>
+        * Frame Works:<br>
+        - Spring;<br>
+        - Hibernate;<br>
+        - Angular;<br></strong></sub>
+        <br>
+        <br>
+        <hr width="380px">
+
+        <sub><strong style="font-size: large;">
+                      <strong style="text-decoration: underline;"> * Pursuing:</strong><br><br>
+                           - p5.JS;<br>
+        - Ml5[Librerares for Machine learning];<br><br>
+        * Furthure Intrests:<br>
+        - TensorFlow;<br>
+        - Python;  
+        <br>
+        <br>
+          -Language's Known : English[C1] ,German[A2] ,Hindi ,Telugu;-
+        </strong>
+        </sub>   
+       </div>
+       <!-- <div class="image-container" style="width: 30%;height: 80%;margin-top: -90vh;overflow: hidden;float:right;"> 
+       </div> -->
+       <!-- <img src="assets/ele.jpg" style="width: 30%;height: 80%;margin-top: -80vh;overflow: hidden;float:right;"> -->
+
+<br>
+<div class="container " style="margin-top: 20vh;text-align: center;padding: 30px; font-size: 20px;">
+       <h1 style="text-decoration: underline">About ME.</h1>
+       <sub>
+  <strong>
+    I have completed my UG Degree in 2019 and then started learning Full stack development through NIIT i belive in consistent learning and am currently learning implementaion of Machine learning Libraries[Ml5] in p5.js as it is lite and can work fast in Mobile.
+  I also belive in Team Work,Hard Work  can make any task sucessfull along with being a Nurieting Enviornment i want to work in a community which maintaines good relation with there employess.In Free Time I make Gameplay vedios,Workout and recently found interest in working Mechanics of Engines.
+</strong>
+</sub> 
+</div>      
+<br>
+<button class="button" onclick="scrtolltotop()" style="margin-left: 41vw;" title="to top">HOME</button>
+
+           </body>
+</html>
